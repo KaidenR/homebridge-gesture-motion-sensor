@@ -1,0 +1,26 @@
+{
+  "name": "homebridge-gesture-motion-sensor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "ts-node-dev --respawn .",
+    "clean": "rm -rf ./dist",
+    "build": "npm run clean && tsc index.ts --outDir ./dist"
+  },
+  "author": "Kaiden Rawlinson",
+  "license": "ISC",
+  "engines": {
+    "homebridge": ">=1.0.0"
+  },
+  "keywords": [
+    "homebridge-plugin"
+  ],
+  "dependencies": {
+    "@types/node": "^17.0.34",
+    "homebridge": "^1.4.1",
+    "ts-node": "^10.7.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.4"
+  }
+}
